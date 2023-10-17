@@ -1,4 +1,5 @@
-export default function ColorfullMessage(props) {
+// export defaultは利用しない
+export const ColorfullMessage = (props) => {
   const { color, children, message } = props;
   const contentStyle = {
     color, // jsで color:colorと同じ場合は省略できる
@@ -9,4 +10,4 @@ export default function ColorfullMessage(props) {
       {children}
     </h2>
   );
-}
+};
